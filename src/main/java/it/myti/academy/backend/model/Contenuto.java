@@ -1,5 +1,6 @@
 package it.myti.academy.backend.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -44,5 +45,6 @@ public class Contenuto {
 
     @ManyToOne
     @JoinColumn(name = "collo_id")
+    @JsonIgnore
     protected Collo collo;
 }
