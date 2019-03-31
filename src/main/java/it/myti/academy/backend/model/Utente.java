@@ -37,4 +37,26 @@ public class Utente {
     @OneToMany(mappedBy = "utente")
     protected List<Collo> spedizioniFatte;
 
+
+    public Long getId() { return id; }
+
+    public String getUsername() { return username; }
+
+    public String getPassword() { return password; }
+
+    public String getNome() { return nome; }
+
+    public List<Collo> getSpedizioniFatte() { return spedizioniFatte; }
+
+
+
+    public void setId(Long id) { this.id = id; }
+
+    public void setUsername(String username) { this.username = username; }
+
+    public void setNome(String nome) { this.nome = nome; }
+
+    public void setPassword(String password) { this.password = password; }
+
+    public void setSpedizioniFatte(List<Collo> spedizioniFatte) { this.spedizioniFatte = spedizioniFatte; }
 }

@@ -48,5 +48,7 @@ public class Spedizione {
     @OneToMany(mappedBy = "spedizione")
     protected List<Collo> colliInviati;
 
-
+    public Date getArrivoIl() {
+        return arrivoIl;
+    }
 }

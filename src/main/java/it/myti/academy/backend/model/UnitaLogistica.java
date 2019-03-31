@@ -46,4 +46,35 @@ public class UnitaLogistica {
     @OneToMany(mappedBy = "unitaLogistica")
     protected List<Collo> spedizioniFatte;
 
+
+    public Long getId() { return id; }
+
+    public String getCodice() { return codice; }
+
+    public String getIdEsterno() { return idEsterno; }
+
+    public Short getTemperatureMassima() { return temperatureMassima; }
+
+    public Short getTemperaturaMinima() { return temperaturaMinima; }
+
+    public StatoUnitaLogistica getStato() { return stato; }
+
+    public List<Collo> getSpedizioniFatte() { return spedizioniFatte; }
+
+
+
+    public void setId(Long id) { this.id = id; }
+
+    public void setCodice(String codice) { this.codice = codice; }
+
+    public void setIdEsterno(String idEsterno) { this.idEsterno = idEsterno; }
+
+    public void setTemperatureMassima(Short temperatureMassima) { this.temperatureMassima = temperatureMassima; }
+
+    public void setTemperaturaMinima(Short temperaturaMinima) { this.temperaturaMinima = temperaturaMinima; }
+
+    public void setStato(StatoUnitaLogistica stato) { this.stato = stato; }
+
+    public void setSpedizioniFatte(List<Collo> spedizioniFatte) { this.spedizioniFatte = spedizioniFatte; }
+
 }

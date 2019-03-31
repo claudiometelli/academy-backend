@@ -50,4 +50,9 @@ public class Collo {
     @OneToMany(mappedBy = "collo")
     protected List<Evento> eventi;
 
+    public Spedizione getSpedizione() {
+        return spedizione;
+    }
+
+
 }
